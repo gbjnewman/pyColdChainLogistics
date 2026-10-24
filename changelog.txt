@@ -1,4 +1,9 @@
-
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 2026-10-24
+  Changes:
+    - Hide storage capacity settings when their values are overridden by Pyanodons compatibility.
+    - Hide the space platform capacity setting when Space Age is not installed.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.1
 Date: 2026-10-24
