@@ -1,8 +1,8 @@
 {
-  "name": "Fridge",
-  "version": "1.0.0",
-  "title": "Cold Chain Logistics (Fridge)",
-  "author": "LightningMaster",
+  "name": "pyColdChainLogistics",
+  "version": "1.0.1",
+  "title": "Py Cold Chain logistics",
+  "author": "LightningMaster, Kabury, pybren",
   "contact": "",
   "homepage": "",
   "description": "Having produced argicultural science pack spoiled? No worries! This mod can cover you up! Adds a series of refrigeration technologies to help you complete the full cold chain logistics!",
