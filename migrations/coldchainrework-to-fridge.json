@@ -1,0 +1,26 @@
+
+{
+  "entity": [
+    ["refrigerator", "refrigerater"],
+    ["logistic-refrigerator-passive-provider", "logistic-refrigerater-passive-provider"],
+    ["logistic-refrigerator-requester", "logistic-refrigerater-requester"],
+    ["logistic-refrigerator-buffer", "logistic-refrigerater-buffer"]
+  ],
+  "item": [
+    ["refrigerator", "refrigerater"],
+    ["logistic-refrigerator-passive-provider", "logistic-refrigerater-passive-provider"],
+    ["logistic-refrigerator-requester", "logistic-refrigerater-requester"],
+    ["logistic-refrigerator-buffer", "logistic-refrigerater-buffer"]
+  ],
+  "recipe": [
+    ["refrigerator", "refrigerater"],
+    ["logistic-refrigerator-passive-provider", "logistic-refrigerater-passive-provider"],
+    ["logistic-refrigerator-requester", "logistic-refrigerater-requester"],
+    ["logistic-refrigerator-buffer", "logistic-refrigerater-buffer"]
+  ],
+  "technology": [
+    ["refrigerator", "refrigerater"],
+    ["logistic-refrigerator", "logistic-refrigerater"],
+    ["preservation-warehouse", "preservation-warehouse-tech"]
+  ]
+}
