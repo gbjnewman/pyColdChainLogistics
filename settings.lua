@@ -92,12 +92,5 @@ data:extend({
         default_value = 3000,
         minimum_value = 0.1,
         order = "e"
-    },
-    {
-        type = "bool-setting",
-        name = "fridge-py-relaxed-progression",
-        setting_type = "startup",
-        default_value = false,
-        order = "z[py]-a"
     }
 })
