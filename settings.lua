@@ -1,3 +1,7 @@
+-- Py compatibility overrides some storage capacity settings.
+local py_storage = not not (mods["pyalienlife"] and mods["pypostprocessing"])
+local py_warehouse = py_storage and (mods["pyindustry"] ~= nil)
+
 data:extend({
     {
         type = "int-setting",
@@ -6,7 +10,8 @@ data:extend({
         default_value = 24,
         minimum_value = 1,
         maximum_value = 96,
-        order = "a"
+        order = "a",
+        hidden = py_storage
     },
     {
         type = "int-setting",
@@ -15,7 +20,8 @@ data:extend({
         default_value = 200,
         minimum_value = 1,
         maximum_value = 1024,
-        order = "b"
+        order = "b",
+        hidden = py_warehouse
     },
     {
         type = "int-setting",
@@ -24,7 +30,8 @@ data:extend({
         default_value = 20,
         minimum_value = 1,
         maximum_value = 200,
-        order = "b"
+        order = "b",
+        hidden = not mods["space-age"] or py_storage
     },
     {
         type = "int-setting",
