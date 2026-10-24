@@ -11,6 +11,7 @@
   "dependencies": [
     "base >= 2.1.2",
     "?space-age",
-    "(?) Factorio-Tiberium"
+    "(?) Factorio-Tiberium",
+    "(?) pypostprocessing"
   ]
 }
