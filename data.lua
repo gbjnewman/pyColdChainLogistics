@@ -60,14 +60,14 @@ end
 local refrigerator = table.deepcopy(data.raw.container["steel-chest"])
 refrigerator.type = "container"
 refrigerator.name = "refrigerater"
-refrigerator.icon = "pyColdChainLogistics__/graphics/icon/refrigerater.png"
+refrigerator.icon = "__pyColdChainLogistics__/graphics/icon/refrigerater.png"
 refrigerator.icon_size = 64
 refrigerator.minable.result = "refrigerater"
 refrigerator.order = "a[items]-c[refrigerater]"
 refrigerator.picture = {
   layers = {
       {
-          filename = "pyColdChainLogistics__/graphics/hr-refrigerater.png",
+          filename = "__pyColdChainLogistics__/graphics/hr-refrigerater.png",
           priority = "extra-high",
           width = 66,
           height = 74,
@@ -75,7 +75,7 @@ refrigerator.picture = {
           scale = 0.5
       },
       {
-          filename = "pyColdChainLogistics__/graphics/hr-refrigerater-shadow.png",
+          filename = "__pyColdChainLogistics__/graphics/hr-refrigerater-shadow.png",
           priority = "extra-high",
           width = 112,
           height = 46,
@@ -107,7 +107,7 @@ logistic_fridge.trash_inventory_size = fridge_type.trash_inventory_size
 logistic_fridge.minable.result = fridge_type.name
 logistic_fridge.icons = {
   {
-    icon = "pyColdChainLogistics__/graphics/icon/refrigerater.png",
+    icon = "__pyColdChainLogistics__/graphics/icon/refrigerater.png",
     icon_size = 64,
     tint = fridge_type.color
   }
@@ -129,7 +129,7 @@ local warehouse_collision_box = {{-2.8, -2.8}, {2.8, 2.8}}
 -- Create hidden power entity for warehouse power consumption
 local power_proxy = table.deepcopy(data.raw["roboport"]["roboport"])
 power_proxy.name = "warehouse-power-proxy"
-power_proxy.icon = "pyColdChainLogistics__/graphics/icon/large-chest.png"
+power_proxy.icon = "__pyColdChainLogistics__/graphics/icon/large-chest.png"
 power_proxy.icon_size = 256
 
 -- Configure power settings
@@ -210,7 +210,7 @@ warehouse.type = "container"
 
 -- Basic properties
 warehouse.flags = {"placeable-neutral", "placeable-player", "player-creation"}
-warehouse.icon = "pyColdChainLogistics__/graphics/icon/large-chest.png"
+warehouse.icon = "__pyColdChainLogistics__/graphics/icon/large-chest.png"
 warehouse.icon_size = 256
 warehouse.minable = {mining_time = 6, result = "preservation-warehouse"}
 warehouse.inventory_size = settings.large_chest_capacity
@@ -220,7 +220,7 @@ warehouse.corpse = "big-remnants"
 warehouse.picture = {
   layers = {
       {
-          filename = "pyColdChainLogistics__/graphics/large-chest-front.png",
+          filename = "__pyColdChainLogistics__/graphics/large-chest-front.png",
           priority = "extra-high",
           width = 1024,
           height = 1024,
@@ -228,7 +228,7 @@ warehouse.picture = {
           scale = 0.25
       },
       {
-          filename = "pyColdChainLogistics__/graphics/large-chest-shadow.png",
+          filename = "__pyColdChainLogistics__/graphics/large-chest-shadow.png",
           priority = "extra-high",
           width = 1024,
           height = 600,
@@ -420,7 +420,7 @@ local items = {
   {
       type = "item",
       name = "refrigerater",
-      icon = "pyColdChainLogistics__/graphics/icon/refrigerater.png",
+      icon = "__pyColdChainLogistics__/graphics/icon/refrigerater.png",
       icon_size = 64,    
       subgroup = "storage",
       order = "a[items]-d[refrigerater]",
@@ -432,7 +432,7 @@ local items = {
   {
       type = "item",
       name = "preservation-warehouse",
-      icon = "pyColdChainLogistics__/graphics/icon/large-chest.png",
+      icon = "__pyColdChainLogistics__/graphics/icon/large-chest.png",
       icon_size = 256,
       subgroup = "storage",
       order = "a[items]-e[preservation-warehouse]",
@@ -508,7 +508,7 @@ for _, fridge_type in pairs(logistic_fridge_types) do
       name = fridge_type.name,
       icons = {
           {
-              icon = "pyColdChainLogistics__/graphics/icon/refrigerater.png",
+              icon = "__pyColdChainLogistics__/graphics/icon/refrigerater.png",
               icon_size = 64,
               tint = fridge_type.color
           }
@@ -770,7 +770,7 @@ local technologies = {
       type = "technology",
       name = "refrigerater",
       icons = {{
-          icon = "pyColdChainLogistics__/graphics/icon/refrigerater.png",
+          icon = "__pyColdChainLogistics__/graphics/icon/refrigerater.png",
           icon_size = 64
       }},
       prerequisites = {"electric-engine", "processing-unit", "plastics"},
@@ -791,7 +791,7 @@ local technologies = {
   {
       type = "technology",
       name = "logistic-refrigerater",
-      icon = "pyColdChainLogistics__/graphics/icon/refrigerater.png",
+      icon = "__pyColdChainLogistics__/graphics/icon/refrigerater.png",
       icon_size = 64,
       prerequisites = {"refrigerater", "logistic-system"},
       effects = {
@@ -810,7 +810,7 @@ local technologies = {
   {
       type = "technology",
       name = "preservation-warehouse-tech",
-      icon = "pyColdChainLogistics__/graphics/icon/large-chest.png",
+      icon = "__pyColdChainLogistics__/graphics/icon/large-chest.png",
       icon_size = 256,
       prerequisites = {"logistic-refrigerater"},
       unit = {
